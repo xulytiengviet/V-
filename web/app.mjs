@@ -75,7 +75,16 @@ hàm chính() {
   };
   in "Giá trị lớn nhất: " + lớn;
 };`},
-  {id:'bat_loi',title:'Thử / bắt lỗi',topic:'Nâng cao',detail:'Xử lý tình huống ngoại lệ có kiểm soát.',code:`// Bài 10 — Xử lý ngoại lệ
+  {id:'lua_chon',title:'Chọn / ca / mặc định',topic:'Rẽ nhánh',detail:'Chọn hành động ứng với một giá trị.',code:`// Bài 10 — Chọn nhánh theo mã trạng thái
+hàm chính() {
+  trạng_thái = 200;
+  chọn (trạng_thái) {
+    ca 200: { in "Đã hoàn thành"; }
+    ca 404: { in "Không tìm thấy"; }
+    mặc định: { in "Trạng thái khác"; }
+  };
+};`},
+  {id:'bat_loi',title:'Thử / bắt lỗi',topic:'Nâng cao',detail:'Xử lý tình huống ngoại lệ có kiểm soát.',code:`// Bài 11 — Xử lý ngoại lệ
 hàm chính() {
   thử {
     ném "Chưa có dữ liệu phù hợp";

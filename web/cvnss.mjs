@@ -1,7 +1,7 @@
 /** Bridges V++ source keywords with CVNSS4.0 without touching user data in strings/comments.
  * Converter is loaded separately from the supplied v5 audit-safe edition.
  */
-export const RESERVED=['hàm','in','nếu','hoặc','lặp','trả','về','đúng','sai','rỗng','thoát','bỏ','qua','thử','bắt','lỗi','ném'];
+export const RESERVED=['hàm','in','nếu','hoặc','lặp','trả','về','đúng','sai','rỗng','thoát','bỏ','qua','thử','bắt','lỗi','ném','chọn','ca','mặc','định'];
 const isWord = c=>/[\p{L}\p{M}\p{N}_]/u.test(c||'');
 export function bridge(converter){
   if(!converter || !converter.selfTest || !converter.audit)throw new Error('Thiếu CVNSSConverter v5 audit-safe.');

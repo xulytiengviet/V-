@@ -9,7 +9,7 @@ export class VppError extends Error {
 const isStart = c => /[\p{L}_]/u.test(c || '');
 const isPart = c => /[\p{L}\p{M}\p{N}_]/u.test(c || '');
 const OPS = ['==','!=','<=','>=','&&','||','+=','-=','*=','/=','%=','++','--'];
-const KEYWORDS = new Set(['hàm','in','nếu','hoặc','lặp','trả','về','đúng','sai','rỗng','thoát','bỏ','qua','thử','bắt','lỗi','ném']);
+const KEYWORDS = new Set(['hàm','in','nếu','hoặc','lặp','trả','về','đúng','sai','rỗng','thoát','bỏ','qua','thử','bắt','lỗi','ném','chọn','ca','mặc','định']);
 export function lex(source) {
   const s=String(source).normalize('NFC'); const tokens=[];
   let p=0,line=1,column=1;
@@ -88,6 +88,17 @@ class Parser{
         if(this.at('nếu'))no=this.statement();else no=this.block();
       }
       this.optionalSemicolon();return {type:'if',condition,yes,no,loc:tok};
+    }
+    if(this.eat('chọn')){
+      this.need('(');const value=this.expr();this.need(')');this.need('{');
+      const arms=[];let hasDefault=false;
+      while(!this.at('}')){
+        if(this.cur().kind==='eof')throw new VppError('Thiếu } đóng chọn.',this.cur());
+        if(this.eat('ca')){const test=this.expr();this.need(':');arms.push({test,body:this.block()});continue;}
+        if(this.eat('mặc')){this.need('định');this.need(':');if(hasDefault)throw new VppError('Không được khai báo mặc định hai lần.',this.cur());hasDefault=true;arms.push({test:null,body:this.block()});continue;}
+        throw new VppError('Trong chọn, dùng ca <giá trị>: { ... } hoặc mặc định: { ... }.',this.cur());
+      }
+      this.need('}');this.optionalSemicolon();return {type:'switch',value,arms,loc:tok};
     }
     if(this.eat('lặp')){
       this.need('(');const init=this.at(';')?null:this.expr();this.need(';');
@@ -241,6 +252,15 @@ export function run(source,{input='',maxSteps=80000,maxOutput=40000,maxDepth=64}
       case 'expr':return evaluate(node.value,env);
       case 'print':return echo(evaluate(node.value,env));
       case 'if':return truthy(evaluate(node.condition,env))?execute(node.yes,env):node.no?execute(node.no,env):undefined;
+      case 'switch':{
+        const value=evaluate(node.value,env);
+        let fallback=null;
+        for(const arm of node.arms){if(arm.test===null){fallback=arm;continue;}
+          if(evaluate(arm.test,env)===value){try{execute(arm.body,env);}catch(s){if(!(s instanceof Signal&&s.type==='break'))throw s;}return;}
+        }
+        if(fallback){try{execute(fallback.body,env);}catch(s){if(!(s instanceof Signal&&s.type==='break'))throw s;}}
+        return;
+      }
       case 'for':{
         const local=new Env(env);if(node.init)evaluate(node.init,local);
         while(!node.condition||truthy(evaluate(node.condition,local))){

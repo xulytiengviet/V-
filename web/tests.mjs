@@ -15,6 +15,7 @@ const cases=[
   ['danh sách',`a=[4,5,6];a[1]=10;in a[1];in độ_dài(a);`,'10\n3'],
   ['từ điển',`a={"tên":"Hà Nội","dân":9};in a["tên"];`,'Hà Nội'],
   ['ngoại lệ',`thử{ném "sai dữ liệu";} bắt lỗi(e){in e;};`,'sai dữ liệu'],
+  ['chọn ca',`hàm chính(){mã=404;chọn(mã){ca 200:{in "OK";} ca 404:{in "Không tìm thấy";thoát;} mặc định:{in "Khác";}};};`,'Không tìm thấy'],
   ['logic',`in (đúng && !sai);in (rỗng || 7);`,'đúng\n7'],
   ['chuỗi an toàn',`// Nếu có in trong chú thích\nin "nếu hàm trong chuỗi";`,'nếu hàm trong chuỗi'],
   ['đầu vào',`in "Xin chào " + đầu_vào();`,'Xin chào lớp 9'],

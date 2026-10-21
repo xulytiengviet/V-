@@ -5,7 +5,7 @@ Giao diện học lập trình V++ trên trình duyệt, phong cách Pascal / No
 ## Tách bạch hai môi trường
 
 - **Native V++** tại thư mục `src/` của repository: C++17, compiler, IR, bytecode VM, module, class, thư viện chuẩn. Tài liệu gốc tại `docs/language-reference.md`.
-- **V++ Classroom VM** tại `web/vpp-core.mjs`: bộ thông dịch độc lập, giới hạn tài nguyên cho các bài học cơ bản. Không phải bytecode VM gốc và không bảo đảm tương thích đầy đủ. Hỗ trợ biến, số/chữ/logic, điều kiện, vòng lặp for, break/continue, hàm, tham số mặc định, đệ quy, danh sách, từ điển, phép toán, thử/bắt lỗi, ném ngoại lệ và một số hàm tích hợp.
+- **V++ Classroom VM** tại `web/vpp-core.mjs`: bộ thông dịch độc lập, giới hạn tài nguyên cho các bài học cơ bản. Không phải bytecode VM gốc và không bảo đảm tương thích đầy đủ. Hỗ trợ biến, số/chữ/logic, điều kiện if và chọn/ca, vòng lặp for, break/continue, hàm, tham số mặc định, đệ quy, danh sách, từ điển, phép toán, thử/bắt lỗi, ném ngoại lệ và một số hàm tích hợp.
 
 ## CVNSS4.0 audit-safe
 

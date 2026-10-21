@@ -1,3 +1,5 @@
+> **Môi trường lớp học V++ + CVNSS4.0:** [Mở trang web giới thiệu và viết mã trực tuyến](https://xulytiengviet.github.io/V-/) (sau khi GitHub Pages được kích hoạt). Phần `web/` chạy tập con cú pháp cho mục đích giáo dục, tách biệt compiler C++ gốc. [Hướng dẫn Web IDE](web/README.md) · [Tích hợp CVNSS4.0](docs/cvnss4-integration.md).
+
 <div align="center">
   <img src="assets/icons/vpp-file.svg" width="112" alt="V++ logo" />
 
