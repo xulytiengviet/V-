@@ -1,0 +1,710 @@
+{
+  "schema": "cvnss4.0-audit-manifest/v1",
+  "converterVersion": "5.0.0-audit-safe",
+  "sourceVersion": "4.1.0-pro",
+  "stats": {
+    "baseRows": 758,
+    "patch54Entries": 324,
+    "patch56Entries": 12,
+    "totalPatchEntries": 336,
+    "ambiguityGroups": 56,
+    "explicitCanonicalPolicies": 56,
+    "criticalCollisionGroups": 5,
+    "silentReverseOverwrite": 0
+  },
+  "criticalCollisions": {
+    "ed": {
+      "candidates": [
+        "ề",
+        "oet"
+      ],
+      "preferred": "ề"
+    },
+    "es": {
+      "candidates": [
+        "ẽ",
+        "oec"
+      ],
+      "preferred": "ẽ"
+    },
+    "od": {
+      "candidates": [
+        "ồ",
+        "oat"
+      ],
+      "preferred": "ồ"
+    },
+    "of": {
+      "candidates": [
+        "ộ",
+        "oap"
+      ],
+      "preferred": "ộ"
+    },
+    "os": {
+      "candidates": [
+        "õ",
+        "oac"
+      ],
+      "preferred": "õ"
+    }
+  },
+  "ambiguities": {
+    "ed": {
+      "candidates": [
+        "ề",
+        "oet"
+      ],
+      "sources": [
+        "base",
+        "patch54"
+      ],
+      "preferred": "ề"
+    },
+    "es": {
+      "candidates": [
+        "ẽ",
+        "oec"
+      ],
+      "sources": [
+        "base",
+        "patch56"
+      ],
+      "preferred": "ẽ"
+    },
+    "i": {
+      "candidates": [
+        "i",
+        "y"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "i"
+    },
+    "iaj": {
+      "candidates": [
+        "ía",
+        "ýa"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "ía"
+    },
+    "ial": {
+      "candidates": [
+        "ìa",
+        "ỳa"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "ìa"
+    },
+    "iar": {
+      "candidates": [
+        "ịa",
+        "ỵa"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "ịa"
+    },
+    "ias": {
+      "candidates": [
+        "ĩa",
+        "ỹa"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "ĩa"
+    },
+    "iaz": {
+      "candidates": [
+        "ỉa",
+        "ỷa"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "ỉa"
+    },
+    "idb": {
+      "candidates": [
+        "iết",
+        "yết"
+      ],
+      "sources": [
+        "base",
+        "patch54"
+      ],
+      "preferred": "iết"
+    },
+    "idd": {
+      "candidates": [
+        "iềt",
+        "yềt"
+      ],
+      "sources": [
+        "patch54",
+        "patch54"
+      ],
+      "preferred": "iềt"
+    },
+    "idf": {
+      "candidates": [
+        "iệt",
+        "yệt"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iệt"
+    },
+    "idg": {
+      "candidates": [
+        "iễt",
+        "yễt"
+      ],
+      "sources": [
+        "patch54",
+        "patch54"
+      ],
+      "preferred": "iễt"
+    },
+    "idq": {
+      "candidates": [
+        "iểt",
+        "yểt"
+      ],
+      "sources": [
+        "patch54",
+        "patch54"
+      ],
+      "preferred": "iểt"
+    },
+    "idy": {
+      "candidates": [
+        "yêt",
+        "iêt"
+      ],
+      "sources": [
+        "base",
+        "patch54"
+      ],
+      "preferred": "iêt"
+    },
+    "ij": {
+      "candidates": [
+        "í",
+        "ý"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "í"
+    },
+    "il": {
+      "candidates": [
+        "ì",
+        "ỳ"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "ì"
+    },
+    "ilb": {
+      "candidates": [
+        "iến",
+        "yến"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iến"
+    },
+    "ild": {
+      "candidates": [
+        "iền",
+        "yền"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iền"
+    },
+    "ilf": {
+      "candidates": [
+        "iện",
+        "yện"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iện"
+    },
+    "ilg": {
+      "candidates": [
+        "iễn",
+        "yễn"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iễn"
+    },
+    "ilq": {
+      "candidates": [
+        "iển",
+        "yển"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iển"
+    },
+    "ily": {
+      "candidates": [
+        "iên",
+        "yên"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iên"
+    },
+    "ir": {
+      "candidates": [
+        "ị",
+        "ỵ"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "ị"
+    },
+    "is": {
+      "candidates": [
+        "ĩ",
+        "ỹ"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "ĩ"
+    },
+    "ivb": {
+      "candidates": [
+        "iếm",
+        "yếm"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iếm"
+    },
+    "ivd": {
+      "candidates": [
+        "iềm",
+        "yềm"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iềm"
+    },
+    "ivf": {
+      "candidates": [
+        "iệm",
+        "yệm"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iệm"
+    },
+    "ivg": {
+      "candidates": [
+        "iễm",
+        "yễm"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iễm"
+    },
+    "ivq": {
+      "candidates": [
+        "iểm",
+        "yểm"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iểm"
+    },
+    "ivy": {
+      "candidates": [
+        "iêm",
+        "yêm"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iêm"
+    },
+    "iwb": {
+      "candidates": [
+        "iếu",
+        "yếu"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iếu"
+    },
+    "iwd": {
+      "candidates": [
+        "iều",
+        "yều"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iều"
+    },
+    "iwf": {
+      "candidates": [
+        "iệu",
+        "yệu"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iệu"
+    },
+    "iwg": {
+      "candidates": [
+        "iễu",
+        "yễu"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iễu"
+    },
+    "iwq": {
+      "candidates": [
+        "iểu",
+        "yểu"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iểu"
+    },
+    "iwy": {
+      "candidates": [
+        "iêu",
+        "yêu"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iêu"
+    },
+    "iz": {
+      "candidates": [
+        "ỉ",
+        "ỷ"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "ỉ"
+    },
+    "izb": {
+      "candidates": [
+        "iếng",
+        "yếng"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iếng"
+    },
+    "izd": {
+      "candidates": [
+        "iềng",
+        "yềng"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iềng"
+    },
+    "izf": {
+      "candidates": [
+        "iệng",
+        "yệng"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iệng"
+    },
+    "izg": {
+      "candidates": [
+        "iễng",
+        "yễng"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iễng"
+    },
+    "izq": {
+      "candidates": [
+        "iểng",
+        "yểng"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iểng"
+    },
+    "izy": {
+      "candidates": [
+        "iêng",
+        "yêng"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "iêng"
+    },
+    "oaj": {
+      "candidates": [
+        "óa",
+        "oá"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "óa"
+    },
+    "oal": {
+      "candidates": [
+        "òa",
+        "oà"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "òa"
+    },
+    "oar": {
+      "candidates": [
+        "ọa",
+        "oạ"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "ọa"
+    },
+    "oas": {
+      "candidates": [
+        "õa",
+        "oã"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "õa"
+    },
+    "oaz": {
+      "candidates": [
+        "ỏa",
+        "oả"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "ỏa"
+    },
+    "od": {
+      "candidates": [
+        "ồ",
+        "oat"
+      ],
+      "sources": [
+        "base",
+        "patch54"
+      ],
+      "preferred": "ồ"
+    },
+    "of": {
+      "candidates": [
+        "ộ",
+        "oap"
+      ],
+      "sources": [
+        "base",
+        "patch54"
+      ],
+      "preferred": "ộ"
+    },
+    "os": {
+      "candidates": [
+        "õ",
+        "oac"
+      ],
+      "sources": [
+        "base",
+        "patch54"
+      ],
+      "preferred": "õ"
+    },
+    "yj": {
+      "candidates": [
+        "úy",
+        "uý"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "úy"
+    },
+    "yl": {
+      "candidates": [
+        "ùy",
+        "uỳ"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "ùy"
+    },
+    "yr": {
+      "candidates": [
+        "ụy",
+        "uỵ"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "ụy"
+    },
+    "ys": {
+      "candidates": [
+        "ũy",
+        "uỹ"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "ũy"
+    },
+    "yz": {
+      "candidates": [
+        "ủy",
+        "uỷ"
+      ],
+      "sources": [
+        "base",
+        "base"
+      ],
+      "preferred": "ủy"
+    }
+  },
+  "dataCorrections": [
+    {
+      "type": "dedupe",
+      "before": [
+        "oòng",
+        "oogl",
+        "oogl"
+      ],
+      "after": null
+    },
+    {
+      "type": "mapping_correction",
+      "before": [
+        "yêt",
+        "idb",
+        "idb"
+      ],
+      "after": [
+        "yêt",
+        "idy",
+        "idy"
+      ]
+    },
+    {
+      "type": "data_typo_correction",
+      "before": [
+        "yệnh",
+        "izf",
+        "izf"
+      ],
+      "after": [
+        "yệng",
+        "izf",
+        "izf"
+      ],
+      "legacyForwardAlias": [
+        "yệnh",
+        "izf"
+      ]
+    }
+  ]
