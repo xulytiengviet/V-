@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101d86">
+  <meta name="description" content="V++ – ngôn ngữ lập trình tiếng Việt cho học sinh THCS, THPT. Tập viết và chạy chương trình V++ ngay trên trình duyệt, khám phá CVNSS4.0 và góp ý cùng giáo viên.">
+  <title>V++ · Ngôn ngữ lập trình tiếng Việt | DOS Learning Lab</title>
+  <link rel="icon" href="assets/icons/vpp-file.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="web/style.css">
+  <script defer src="web/vendor/cvnss4-audit-safe.js"></script>
+  <script type="module" src="web/app.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#ide">Đi thẳng đến trình soạn thảo</a>
+  <div class="dos-ribbon"><span>V++ EDUCATION SYSTEM</span><span>VIỆT NAM · 2026</span><span>UTF-8 <i class="live-dot"></i> ONLINE</span></div>
+  <header class="site-header" id="dau-trang">
+    <div class="brand"><div class="brand-icon">V<span>++</span></div><div><strong>V++ <small>/ V-PLUS-PLUS</small></strong><span>Học lập trình bằng tiếng Việt</span></div></div>
+    <nav class="header-links" aria-label="Điều hướng chính"><a href="#gioi-thieu">Giới thiệu</a><a href="#ide">Lập trình</a><a href="#bai-hoc">Bài học</a><a href="#cvnss">CVNSS4.0</a><a href="#giao-vien">Góp ý</a></nav>
+    <a class="repo-btn" href="https://github.com/xulytiengviet/V-" target="_blank" rel="noopener noreferrer">↗ Mã nguồn GitHub</a>
+  </header>
+  <main>
+    <section class="hero section-bound" id="gioi-thieu">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="blinking-square">■</span> SÁNG KIẾN NGHIÊN CỨU GIÁO DỤC · OPEN SOURCE</div>
+        <h1>Viết mã bằng<br><em>tiếng Việt.</em><br>Hiểu máy tính<br>theo cách của bạn<span class="cursor">_</span></h1>
+        <p>V++ là ngôn ngữ lập trình sử dụng tiếng Việt, được nghiên cứu và phát triển với mong muốn đưa tư duy lập trình đến gần hơn với học sinh Việt Nam, đặc biệt ở bậc <strong>THCS và THPT</strong>.</p>
+        <p class="hero-note">Không thay thế Python, C++ hay Java. V++ hướng tới một bước đệm để người mới học làm quen với biến, điều kiện, vòng lặp, hàm và thuật toán.</p>
+        <div class="hero-actions"><a class="primary-action" href="#ide">▶ Bắt đầu viết chương trình</a><a class="secondary-action" href="#giao-vien">Góp ý cho dự án ↗</a></div>
+        <div class="mini-stat"><span><b>01</b> Ngôn ngữ Việt</span><span><b>02</b> Compiler + VM gốc</span><span><b>03</b> CVNSS4.0 tùy chọn</span></div>
+      </div>
+      <div class="hero-art" aria-label="Màn hình phong cách máy tính MS-DOS minh họa chương trình V++">
+        <div class="window-frame"><div class="window-title">■ TURBO V++ 1.0 — VIETNAMESE PROGRAMMING LAB <span>□ ×</span></div>
+        <div class="menu-dos"><span>F1 Help</span><span>F2 Save</span><span>F3 Open</span><span>F9 Run</span></div>
+        <div class="mock-editor"><div class="mock-index">01<br>02<br>03<br>04<br>05<br>06<br>07</div><pre><span class="code-key">hàm</span> <span class="code-fn">chính</span>() {
+  <span class="code-key">in</span> <span class="code-string">"Xin chào Việt Nam!"</span>;
+
+  <span class="code-key">lặp</span>(i = 1; i &lt;= 3; i++) {
+    <span class="code-key">in</span> <span class="code-string">"Bài học số "</span> + i;
+  };
+};</pre></div>
+        <div class="mock-output"><span>▸ KẾT QUẢ CHẠY</span><br>Xin chào Việt Nam!<br>Bài học số 1<br>Bài học số 2<br>Bài học số 3<span class="blinking-caret">▌</span></div>
+        <div class="window-foot"><span>READY</span><span>V++.VI</span><span>UTF-8 · 100%</span></div></div>
+        <div class="art-label">C:\VPP\EDUCATION&gt;_ <span>THINK IN VIETNAMESE</span></div>
+      </div>
+    </section>
+
+    <section class="overview section-bound" aria-label="Giá trị giáo dục">
+      <article><div class="feature-num">01 / TƯ DUY</div><h3>Học thuật toán trước cú pháp</h3><p>Diễn đạt ý tưởng bằng từ khóa quen thuộc; tập trung hiểu điều kiện, vòng lặp và cách giải quyết vấn đề.</p></article>
+      <article><div class="feature-num">02 / CHUYỂN TIẾP</div><h3>Từ V++ đến các ngôn ngữ khác</h3><p>So sánh V++ với Python và C++ để học sinh nhận ra cùng một cấu trúc tư duy trong các cú pháp khác nhau.</p></article>
+      <article><div class="feature-num">03 / KIỂM CHỨNG</div><h3>Học bằng thử nghiệm</h3><p>Viết mã, chạy thử, xem thông báo lỗi tiếng Việt và tự sửa ngay trong môi trường trình duyệt.</p></article>
+    </section>
+
+    <section class="lab-section section-bound" id="ide">
+      <div class="section-heading"><div><span class="small-label">[ VPP.EXE / CLASSROOM MODE ]</span><h2>Phòng thực hành V++</h2><p>Không cần cài đặt. Chọn bài học ở cột trái, sửa mã và nhấn <kbd>F9</kbd> để chạy.</p></div><div class="section-meta"><span class="led"></span> TRÌNH CHẠY GIÁO DỤC · CHẠY CỤC BỘ</div></div>
+      <div class="ide-shell" role="region" aria-label="Trình biên tập mã V++ tương tác">
+        <div class="ide-titlebar"><span>◈ V++ COMMANDER <i class="bar-sep"></i> C:\VPP\LESSONS</span><span class="ide-controls" aria-hidden="true">─ □ ×</span></div>
+        <div class="ide-menu"><span><u>T</u>ệp</span><span><u>S</u>ửa</span><span><u>C</u>hạy</span><span><u>B</u>ài học</span><span><u>G</u>iúp đỡ</span><span class="menu-date">V++ / UTF-8</span></div>
+        <div class="ide-toolbar"><button type="button" id="run" class="run-button">▶ F9 CHẠY</button><button type="button" id="save">▣ LƯU MÃ</button><button type="button" id="download">↓ TẢI .VI</button><button type="button" id="open">↑ MỞ TỆP</button><button type="button" id="reset">↺ ĐẶT LẠI</button><input id="file" type="file" accept=".vi,.txt,text/plain" hidden><label class="switch-label" for="cvnss-mode"><input id="cvnss-mode" type="checkbox"> GÕ TỪ KHÓA CVNSS4.0</label></div>
+        <div class="ide-workspace">
+          <aside class="file-pane"><div class="pane-head">◢ BÀI THỰC HÀNH ▴</div><div class="path-label">C:\VPP\EXAMPLES\</div><div class="tree-root">▾ 📁 <b>VPP</b></div><div id="file-tree" class="file-tree" aria-label="Danh sách bài học"></div><div class="tree-help">Dùng các ví dụ để học từng cấu trúc cơ bản. Mã của bạn được lưu trên chính thiết bị.</div></aside>
+          <div class="editor-pane"><div class="pane-head"><span>✎ <b id="editor-title">XIN_CHAO.VI</b></span><span>● ĐANG BIÊN TẬP</span></div><div class="editor-container"><div id="line-numbers" aria-hidden="true">1</div><textarea id="source" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" aria-label="Mã nguồn V++" wrap="off"></textarea></div><div class="editor-status"><span id="position">DÒNG 1 · CỘT 1</span><span id="code-mode">V++ NATIVE</span></div></div>
+        </div>
+        <div class="output-panel"><div class="output-head"><span>⌁ BẢNG ĐIỀU KHIỂN / KẾT QUẢ</span><span id="run-state" role="status">CHƯA CHẠY</span></div><pre id="output" aria-live="polite">V++ CLASSROOM VM v0.1
+Gõ mã và nhấn F9 để bắt đầu.
+C:\VPP\&gt; <span class="blink">_</span></pre><div class="output-bottom"><span id="stats">BƯỚC CHẠY: —</span><span id="problem">0 LỖI</span><span>GIỚI HẠN TÀI NGUYÊN BẬT</span></div></div>
+        <div class="ide-functionbar"><span>F1 Trợ giúp</span><span>F2 Lưu</span><span>F3 Mở</span><span>F9 Chạy</span><span>Ctrl+S Lưu</span><span>ESC Trở về</span></div>
+      </div>
+      <p class="lab-disclaimer"><strong>Lưu ý kỹ thuật:</strong> Trình chạy trực tuyến hỗ trợ một tập con cú pháp V++ phục vụ học tập; các tính năng nâng cao như lớp, module, thư viện tệp/mạng và bytecode VM đầy đủ sử dụng trình biên dịch C++ trong kho GitHub. Không thực thi mã tùy ý bằng <code>eval</code>.</p>
+    </section>
+
+    <section class="learn-section section-bound" id="bai-hoc"><div class="section-heading"><div><span class="small-label">[ CURRICULUM / LEARNING PATH ]</span><h2>Từ câu lệnh đầu tiên đến thuật toán</h2><p>Lộ trình gợi ý cho hoạt động Tin học THCS–THPT; giáo viên có thể điều chỉnh theo chương trình và trình độ thực tế.</p></div></div>
+    <div id="course-grid" class="course-grid"></div></section>
+
+    <section class="cvnss-section section-bound" id="cvnss"><div class="section-heading"><div><span class="small-label">[ CVNSS4.0 / DUAL NOTATION SYSTEM ]</span><h2>V++ × CVNSS4.0</h2><p>Hai cách biểu diễn từ khóa, chung một tư duy lập trình. Giữ tiếng Việt Unicode làm cú pháp chuẩn; CVNSS4.0 là lớp gõ và biểu diễn tùy chọn.</p></div><span class="version-label" id="audit-status">ĐANG KIỂM TRA...</span></div>
+      <div class="cvnss-layout"><div class="cvnss-example"><div class="example-head"><span>TỪ KHÓA TIẾNG VIỆT</span><span>⇄</span><span>MÃ CVNSS4.0</span></div><div id="dictionary" class="dictionary"></div></div><div class="cvnss-explain"><h3>Không đánh đổi tính chính xác để lấy sự ngắn gọn</h3><p>Tệp converter đính kèm dùng bản <strong>5.0.0-audit-safe</strong>, lưu mọi ứng viên đảo mã và áp dụng chính sách ưu tiên công khai. Chỉ ánh xạ từ khóa với tiền tố <code>@</code> khi chọn chế độ CVNSS; <strong>không tự ý thay đổi chuỗi, chú thích hoặc tên biến</strong>.</p><div class="audit-grid"><div><b>56</b><span>nhóm nhập nhằng</span></div><div><b>5</b><span>va chạm trọng yếu</span></div><div><b>0</b><span>ghi đè âm thầm</span></div></div><p class="cvnss-warning">Lưu ý: CVNSS4.0 nói chung không đảo mã hoàn toàn một-một. Không nên chuyển đổi toàn bộ mã nguồn theo ký tự rồi dùng như compiler; phải bảo toàn token và cảnh báo nhập nhằng.</p><button id="show-alias" class="secondary-action small-action" type="button">Xem toàn bộ từ khóa được ánh xạ</button></div></div>
+    </section>
+
+    <section class="teacher-section section-bound" id="giao-vien"><div class="teacher-banner"><div><span class="small-label">[ OPEN INVITATION / FOR EDUCATORS ]</span><h2>Thư mời góp ý từ<br>quý thầy cô dạy Tin học</h2></div><p>V++ đang được nghiên cứu như công cụ bổ trợ. Chúng tôi đặc biệt trân trọng nhận xét phản biện, khó khăn khi giảng dạy và đề xuất tính năng từ những thầy cô trực tiếp đứng lớp.</p></div>
+      <div class="question-list">
+        <article><span>01</span><div><h3>Phù hợp với chương trình học?</h3><p>V++ có thể hỗ trợ nội dung nào của môn Tin học THCS và THPT hiện nay? Nên thử nghiệm ở chủ đề và khối lớp nào?</p></div></article>
+        <article><span>02</span><div><h3>Khả năng tiếp thu của học sinh?</h3><p>Câu lệnh tiếng Việt có thực sự giúp học sinh mới học dễ hiểu, hứng thú hơn, hay có thể gây khó khi chuyển sang ngôn ngữ khác?</p></div></article>
+        <article><span>03</span><div><h3>Cú pháp nên được thiết kế ra sao?</h3><p>Thầy cô ưu tiên những từ khóa, cách đặt tên và cách tổ chức chương trình nào để đơn giản mà vẫn nhất quán?</p></div></article>
+        <article><span>04</span><div><h3>Cần công cụ giảng dạy nào?</h3><p>Trình soạn thảo, thông báo lỗi tiếng Việt, mô phỏng thuật toán, hệ thống bài tập, chấm bài hay thống kê tiến bộ nên có mức ưu tiên nào?</p></div></article>
+        <article><span>05</span><div><h3>Có sẵn sàng tham gia thử nghiệm?</h3><p>Nếu có tài liệu, ví dụ và môi trường hoàn chỉnh, thầy cô có thể thử V++ trong một vài tiết học và chia sẻ đánh giá thực tế không?</p></div></article>
+      </div>
+      <div class="teacher-cta"><div><h3>Nhận xét phản biện rất được hoan nghênh.</h3><p>Góp ý trực tiếp trên GitHub Issues; không cần gửi thông tin học sinh hoặc tài liệu lớp học có dữ liệu cá nhân.</p></div><a href="https://github.com/xulytiengviet/V-/issues/new?title=G%C3%B3p%20%C3%BD%20gi%E1%BA%A3ng%20d%E1%BA%A1y%20V%2B%2B" target="_blank" rel="noopener noreferrer" class="primary-action">↗ Gửi góp ý / phản biện</a></div>
+    </section>
+
+    <section class="source-section section-bound"><div><span class="small-label">[ REAL COMPILER / OPEN REPOSITORY ]</span><h2>Không dừng ở một bản minh họa</h2><p>Kho V++ gốc có compiler C++17, frontend, IR, bytecode, máy ảo, công cụ dòng lệnh và hệ thống thư viện. Web IDE giúp người học bắt đầu nhanh; toàn bộ chức năng chuyên sâu được tiếp tục phát triển và kiểm thử trong dự án gốc.</p><div class="tool-tags"><span>LEXER</span><span>PARSER</span><span>AST / IR</span><span>BYTECODE</span><span>VM</span><span>VS CODE</span><span>CVNSS4.0</span></div><a class="secondary-action" href="https://github.com/xulytiengviet/V-/blob/developer/docs/language-reference.md" target="_blank" rel="noopener noreferrer">Đọc tham chiếu cú pháp V++ ↗</a></div><div class="dos-terminal" aria-label="Hướng dẫn dòng lệnh"><div>VPP TERMINAL ▣</div><pre>C:\&gt; vpp phiên bản
+C:\&gt; vpp chạy xin-chao.vi
+C:\&gt; vpp kiểm thử tests
+
+<span>✓ HỌC TỪ TIẾNG VIỆT</span>
+<span>✓ CHUYỂN TIẾP PYTHON / C++</span>
+<span>✓ ĐÓNG GÓP MÃ NGUỒN MỞ</span>
+
+C:\&gt; _</pre></div></section>
+  </main>
+  <footer class="footer"><div><strong>V++ <span>_</span></strong><p>Ngôn ngữ lập trình tiếng Việt · Dự án nghiên cứu mở cho giáo dục.</p></div><div><a href="#dau-trang">Về đầu trang ↑</a><a href="https://github.com/xulytiengviet/V-" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://github.com/xulytiengviet/V-/blob/developer/LICENSE" target="_blank" rel="noopener noreferrer">Giấy phép</a></div><small>© 2026 V++ · UTF-8 · Xây dựng trên mã nguồn mở</small></footer>
+  <dialog id="alias-dialog"><div class="dialog-title"><h3>BẢNG TỪ KHÓA CVNSS4.0</h3><button id="close-alias" type="button" aria-label="Đóng">×</button></div><p>Các alias dưới đây chỉ dùng ở chế độ từ khóa CVNSS4.0, không thay đổi chú thích, chuỗi và định danh; tiền tố @ chống xung đột với tên biến.</p><div id="alias-list"></div></dialog>
+</body>
+</html>

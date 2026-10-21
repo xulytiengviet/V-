@@ -1,0 +1,52 @@
+name: V++ Classroom Web
+on:
+  push:
+    branches: [developer]
+    paths:
+      - 'index.html'
+      - 'web/**'
+      - 'assets/icons/vpp-file.svg'
+      - '.github/workflows/vpp-web.yml'
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'web/**'
+      - '.github/workflows/vpp-web.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    name: Test V++ Classroom + CVNSS4.0
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node web/tests.mjs
+  pages:
+    if: github.event_name != 'pull_request'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Build static classroom website
+        run: |
+          mkdir -p dist/assets/icons
+          cp index.html dist/index.html
+          cp -R web dist/web
+          cp assets/icons/vpp-file.svg dist/assets/icons/vpp-file.svg
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4
